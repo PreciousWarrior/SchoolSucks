@@ -17,7 +17,9 @@ Download the file named `sophos.crt`. Then double click to install it (if using 
 
 Note: This may not completely remove Sophos, in order to guarentee this it is recommended to hard reset your laptop and then get the cert from here if you already have the antivirus. But as far as I have tested no files or processes named "Sophos" or similar run after uninstalling and rebooting. If you are fine with this, you can use the following command to uninstall sophos, follow the installation wizard, and then reboot.
 
-`curl https://raw.githubusercontent.com/PreciousWarrior/SchoolSucks/main/kill_sophos.sh | sudo bash`
+```
+curl https://raw.githubusercontent.com/PreciousWarrior/SchoolSucks/main/kill_sophos.sh | sudo bash
+```
 
 This was taken from the following support forum article: https://community.sophos.com/intercept-x-endpoint/f/discussions/129053/disable-sophos-tamper-protection-on-mac
 
