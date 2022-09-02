@@ -13,6 +13,14 @@ I am putting their SSL cert in this repository so you can start using the intern
 
 Download the file named `sophos.crt`. Then double click to install it (if using MacOS). You should now be able to use the school internet without ever having to install spyware on your laptop!
 
+# Removing the antivirus
+
+Note: This may not completely remove Sophos, in order to guarentee this it is recommended to hard reset your laptop and then get the cert from here if you already have the antivirus. But as far as I have tested no files or processes named "Sophos" or similar run after uninstalling and rebooting. If you are fine with this, you can use the following command to uninstall sophos, follow the installation wizard, and then reboot.
+
+`curl https://raw.githubusercontent.com/PreciousWarrior/SchoolSucks/main/kill_sophos.sh | sudo bash`
+
+This was taken from the following support forum article: https://community.sophos.com/intercept-x-endpoint/f/discussions/129053/disable-sophos-tamper-protection-on-mac
+
 # Trust issues
 
 As I have provided this certificate, I could very well have provided a public key that corresponds to a private key that I generated locally (which would give me the ability to spy on yourtraffic). Therefore, you will have to trust me with the fact that I have provided the Sophos public key. You could go to the IT to install the cert and check if they match if you do not trust me, but that defeats the whole purpose of this repository.
